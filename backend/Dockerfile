@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Runtime stage
-FROM node:20-alpine
+FROM node:16-alpine
 
 WORKDIR /app
 COPY --from=build /app ./
